@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>std task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <h2 class="text-center bg-warning">Student Form Using Firebase !!!</h2>
+    <div class="comtainer-fluid mb-md-0 mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form id="stdform">
+                            <div class="form-group">
+                                <label for="stdName">Enter First Name :</label>
+                                <input required type="text" id="stdName" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdLname">Enter Last Name :</label>
+                                <input required type="text" id="stdLname" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdemail">Enter Email :</label>
+                                <input required type="text" id="stdemail" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="stdcontact">Enter contact :</label>
+                                <input required type="text" id="stdcontact" class="form-control">
+                            </div>
+                                
+                            <div class="form-group">
+                                <label for="stdsalary">Enter Salary :</label>
+                                <input required type="text" id="stdsalary" class="form-control">
+                            </div>
+
+                            <button type="submit" id="addbtn" class="btn btn-sm btn-block btn-dark">Add Student</button>
+                            <button type="button" id="updatebtn" class="btn btn-sm btn-block btn-dark d-none">Update Student</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered text-center bg-light mt-5">
+                    <thead>
+                        <tr>
+                            <td>sr.no</td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Email</td>
+                            <td>Contact</td>
+                            <td>Salary</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tableInfo">
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Pooja</td>
+                            <td>B.tec</td>
+                            <td>p@gmail.com</td>
+                            <td>7654449090</td>
+                            <td><button class="btn btn-sm btn-dark">Edit</button></td>
+                            <td><button class="btn btn-sm btn-danger">Delete</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
